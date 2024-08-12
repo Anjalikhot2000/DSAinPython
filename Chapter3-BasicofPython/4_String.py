@@ -27,3 +27,11 @@ print(s+t)
 #Extract substring using slicing
 s="hello"
 print(s[1:4]) #Output: ell
+
+#String doesnot support assignment
+#s[3]="a" :it will give error
+#cannot update string directly but can do indirectly
+s=s[:3] +"a"+s[3:]
+print(s)
+
+
